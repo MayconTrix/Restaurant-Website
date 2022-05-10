@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------- Variáveis colors with HSL */
+:root{
+    --hue-color: 26; 
+    --bg-hue-color: 20; /* base: 20px  */
+    
+    --first-color: hsl(var(--hue-color), 25%, 20%);
+    --second-color: hsl(var(--hue-color), 20%, 26%);
+    --text-color: hsl(var(--hue-color), 15%, 23%);
+    --bg-color: hsl(var(--bg-hue-color), 35%, 93%);
+    --footer-color: hsl(var(--hue-color), 20%, 36%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+}
+
+/* ------------------------------------- Variables Dark theme */
+body.dark-theme{
+    --first-color: hsl(var(--hue-color), 35%, 85%);
+    --second-color: hsl(var(--hue-color), 30%, 48%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --bg-color: hsl(var(--hue-color), 28%, 12%);
+    --footer-color: hsl(var(--hue-color), 30%, 8%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+}
+
+/* ------------------------------------- DARK AND LIGHT THEME */
+.nav_btns{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.change-theme{
+    font-size: 20px;
+    color: var(--first-color);
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--second-color);
+}
+
+/* ------------------------------------- TITLE AND SUBTITLES */
+
+.section_title{
+    font-size: 24px;
+    color: var(--second-color);
+    text-shadow: 0 0 2px rgba(0, 0, 0, .8);
+}
+
+.section_subtitle{
+    font-size: 15px;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------- LAYOUT */
+.container{
+    max-width: 767px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 15px;
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    padding-top: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .15);
+}
+
+/* ------------------------------------- NAVIGATION */
+.nav{
+    display: flex;
+    margin-left: 15px;
+    max-width: auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: unset;
+}
+
+.nav_logo{
+    width: 75px;
+    height: 50px;
+
+}
+
+.nav_toggle{
+    color: var(--first-color);
+    font-size: 18px;
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.nav_toggle:hover{
+    color: var(--second-color);
+}
+
+@media screen and (max-width: 767px){
+.nav_menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 32px 24px 50px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .15);
+    border-radius: 0 0 24px 24px;
+    transition: .3s;
+}
+}
+
+.nav_list{
+    display: flex;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
+}
+
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-size: 13px;
+    color: var(--first-color);
+    font-weight: 900;
+}
+
+.nav_link:hover{
+    color: var(--second-color);
+}
+
+.nav_icon{
+    font-size: 19px;
+}
+
+.nav_close{
+    position: absolute;
+    right: 21px;
+    bottom: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav_close:hover{
+    color: var(--second-color);
+}
+
+/* ------------------------------------- SHOW MENU */
+.show-menu{
+    top: 0;
+}
+
+.active-link{
+    color: var(--first-color);
+}
+
+.scroll-header{
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .15);
+}
+
+ /* ------------------------------------- HOME */
+.home_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.home_data{
+    justify-content: center;
+    padding: 15px;
+}
+
+.home_img{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.home_logo{
+    border-radius: 20px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.575);
+}
+
+.home_title{
+    margin: 70px 0 20px 0;
+    text-align: center;
+    color: var(--second-color);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+}
+
+.home_subtitle{
+    text-align: center;
+    color: var(--second-color);
+    margin: 30px 0 20px 0;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.home_description{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.google{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 767px;
+    box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------- MENU */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.menu_content{
+    margin: 0 50px;
+}
+
+.menu_icon,
+.menu_arrow{
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.menu_title{
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+
+.menu_arrow{
+    margin-left: none;
+    transition: .4s;
+}
+
+.menu_list{
+    display: flex;
+    row-gap: 24px;
+}
+
+.menu_name{
+    text-align: center;
+    color: var(--second-color);
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.menu_p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.menu_close .menu_list{
+    height: 0;
+    overflow: hidden;
+}
+
+.menu_open .menu_arrow{
+    transform: rotate(-180deg);
+}
+
+/* ------------------------------------- CONTACT */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+.contact_icon{
+    font-size: 20px;
+    color: var(--first-color);
+}
+
+.contact_subtitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* ------------------------------------- SLIDE */
+
+/* ------------------------------------- FOOTER */
+.footer{
+    margin-top: none;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer_bg{
+    background-color: var(--footer-color);
+    padding: 40px;
+}
+
+.footer_title,
+.footer_subtitle{
+    color: var(--first-color);
+}
+
+.footer_social{
+    font-size: 50px;
+    color: #3b5998;
+}
+
+.footer_social:hover{
+    color: var(--bg-color);
+}
+
+/* ------------------------------------- SCROLL BAR */
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: var(--scroll-bar-color);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--second-color);
+}
+
+/* ------------------------------------- SCROLL UP */
+
+.menu,
+.contact{
+    position: initial;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .menu.active,
+  .contact.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+/* ------------------------------------- MEDIAS */
+
+@media screen and (max-width: 350px){
+    .menu{
+        padding: 0;
+    }
+    .menu_title{
+        font-size: 15px;
+    }
+    .menu_icon,
+    .menu_arrow{
+        font-size: 25px;
+    }
+    .section_subtitle{
+        text-align: center;
+    }
+    .footer_bg{
+        padding: 30px;
+    }
+    .footer_title{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .footer_subtitle{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav_close,
+    .nav_toggle{
+        display: none;
+    }
+    .nav_link{
+        display: flex;
+        flex-direction: row;
+        margin: 0 40px;
+    }
+    .nav{
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+}
