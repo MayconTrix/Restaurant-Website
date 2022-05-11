@@ -82,18 +82,20 @@ themeButton.addEventListener('click', () => {
 
 /* ------------------------------------- SCROLL */
 
+
+
 window.addEventListener('scroll', reveal);
 
-    function reveal(){
-      let reveals = document.querySelectorAll('.menu, .contact');
+function reveal(){
+      const reveals = document.querySelectorAll('.menu, .contact, .slide, .fotos');
 
       for(let i = 0; i < reveals.length; i++){
 
-        let windowheight = window.innerHeight;
-        let revealtop = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 10;
+        const windowheight = window.innerHeight;
+        const revealtop = reveals[i].getBoundingClientRect().top;
+        const revealpoint = 150;
 
-        if(revealtop < windowheight - revealpoint){
+        if(revealtop < (windowheight - revealpoint)){
           reveals[i].classList.add('active');
         }
         else{
@@ -103,3 +105,23 @@ window.addEventListener('scroll', reveal);
     }
 
 /* ------------------------------------- SLIDE */
+
+let swiperTestimonial = new Swiper(".slide_container", {
+    loop:true,
+    grabCursor: true,
+    
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints:{
+        568:{
+            slidesPerView: 1,
+        }
+    }
+});

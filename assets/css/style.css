@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -42,6 +42,7 @@ img{
     --footer-color: hsl(var(--hue-color), 20%, 36%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
 }
 
 /* ------------------------------------- Variables Dark theme */
@@ -83,7 +84,7 @@ body.dark-theme{
 }
 
 .section_subtitle{
-    font-size: 15px;
+    font-size: 16px;
     color: var(--second-color);
     display: flex;
     flex-direction: column;
@@ -100,7 +101,7 @@ body.dark-theme{
 
 .header{
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     height: 50px;
     padding-top: 1px;
@@ -118,7 +119,7 @@ body.dark-theme{
     max-width: auto;
     justify-content: space-between;
     align-items: center;
-    z-index: unset;
+    z-index: 3;
 }
 
 .nav_logo{
@@ -204,6 +205,7 @@ body.dark-theme{
 }
 
  /* ------------------------------------- HOME */
+
 .home_container{
     display: flex;
     flex-direction: column;
@@ -228,7 +230,7 @@ body.dark-theme{
 }
 
 .home_title{
-    margin: 70px 0 20px 0;
+    margin: 0px 0 20px 0;
     text-align: center;
     color: var(--second-color);
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
@@ -244,7 +246,7 @@ body.dark-theme{
 
 .home_description{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .google{
@@ -263,7 +265,7 @@ body.dark-theme{
     justify-content: center;
     align-items: center;
     padding: 0 15px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .menu_header{
@@ -306,12 +308,12 @@ body.dark-theme{
     text-align: center;
     color: var(--second-color);
     font-size: 18px;
-    margin: 10px 0 5px;
+    margin: 20px 0 5px;
 }
 
 .menu_p{
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 25px;
 }
 
@@ -341,16 +343,44 @@ body.dark-theme{
 .contact_subtitle{
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 /* ------------------------------------- SLIDE */
+
+.fotos{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.slide{
+    z-index: -3;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 45px;
+    max-width: 767px;
+    max-height: 500px;
+    box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide_img{
+    border-radius: 45px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    color: var(--second-color);
+    font-weight: bolder;
+}
 
 /* ------------------------------------- FOOTER */
 .footer{
     margin-top: none;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 24px;
 }
 
 .footer_bg{
@@ -391,17 +421,42 @@ body.dark-theme{
 
 /* ------------------------------------- SCROLL UP */
 
-.menu,
-.contact{
+.slide{
+    position: initial;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+
+.slide.active{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+.menu{
     position: initial;
     transform: translateY(100px);
     opacity: 0;
     transition: all 1s ease;
   }
   
-  .menu.active,
-  .contact.active{
+.menu.active{
     transform: translateY(0px);
+    opacity: 1;
+  }
+
+.fotos,
+.contact{
+    position: initial;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+.fotos.active,
+.contact.active{
+    transform: translateX(0px);
     opacity: 1;
   }
 
@@ -411,25 +466,37 @@ body.dark-theme{
     .menu{
         padding: 0;
     }
+
     .menu_title{
         font-size: 15px;
     }
+
     .menu_icon,
     .menu_arrow{
         font-size: 25px;
     }
+
     .section_subtitle{
         text-align: center;
     }
+
     .footer_bg{
         padding: 30px;
     }
+
     .footer_title{
         font-size: 25px;
         margin-top: 10px;
     }
+
     .footer_subtitle{
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .slide{
+        margin: 15px;
     }
 }
 
@@ -438,11 +505,13 @@ body.dark-theme{
     .nav_toggle{
         display: none;
     }
+
     .nav_link{
         display: flex;
         flex-direction: row;
         margin: 0 40px;
     }
+
     .nav{
         justify-content: space-between;
         align-content: space-between;
