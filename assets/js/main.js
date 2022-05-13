@@ -87,7 +87,7 @@ themeButton.addEventListener('click', () => {
 window.addEventListener('scroll', reveal);
 
 function reveal(){
-      const reveals = document.querySelectorAll('.menu, .contact, .slide, .fotos');
+      const reveals = document.querySelectorAll('.menu, .contact, .slide, .fotos, .google');
 
       for(let i = 0; i < reveals.length; i++){
 
