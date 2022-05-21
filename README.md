@@ -35,13 +35,11 @@
 ## Images
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/105027088/169623788-26dfb90f-ba3c-4706-b4af-a8db481e4356.jpg" alt="Site IMG" width="719" height="711">
-<img src="https://user-images.githubusercontent.com/105027088/169625547-ab9bee0a-fa81-42ea-861f-0b77f9721810.jpg" alt="Mobile IMG" width="396" height="774">
-<img src="https://user-images.githubusercontent.com/105027088/169626635-da5193a3-112e-4a30-aa67-62c12d7d5d14.gif" alt="Mobile IMG" width="686" height="772">
+   <img src="https://user-images.githubusercontent.com/105027088/169623788-26dfb90f-ba3c-4706-b4af-a8db481e4356.jpg" alt="Site IMG" width="719" height="711">
+   <img src="https://user-images.githubusercontent.com/105027088/169625926-d8f92e2f-cf41-48d5-9faa-29bf102854be.gif" alt="Menu IMG" width="587" height="173">
+   <img src="https://user-images.githubusercontent.com/105027088/169626023-80580c75-8445-4913-8bd9-42fc7a2df399.gif" alt="Cardapio IMG" width="386" height="568">
+   <img src="https://user-images.githubusercontent.com/105027088/169627068-8e2259c1-5ff4-4217-a6ed-31a99c32aa2c.gif" alt="Fotos IMG" width="486" height="572">
 </div>
-
-![Teste](https://user-images.githubusercontent.com/105027088/169625926-d8f92e2f-cf41-48d5-9faa-29bf102854be.gif)
-![cardapioGif](https://user-images.githubusercontent.com/105027088/169626023-80580c75-8445-4913-8bd9-42fc7a2df399.gif)
 
 ## About The Project
 Project initially created to study and improve my understanding, further improving my knowledge obtained in the courses.<br>
