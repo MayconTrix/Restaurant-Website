@@ -35,10 +35,10 @@
 ## Images
 
 <div align="center">
-   <img src="https://user-images.githubusercontent.com/105027088/169623788-26dfb90f-ba3c-4706-b4af-a8db481e4356.jpg" alt="Site IMG" width="719" height="711">
-   <img src="https://user-images.githubusercontent.com/105027088/169625926-d8f92e2f-cf41-48d5-9faa-29bf102854be.gif" alt="Menu IMG" width="587" height="173">
-   <img src="https://user-images.githubusercontent.com/105027088/169626023-80580c75-8445-4913-8bd9-42fc7a2df399.gif" alt="Cardapio IMG" width="386" height="568">
-   <img src="https://user-images.githubusercontent.com/105027088/169627068-8e2259c1-5ff4-4217-a6ed-31a99c32aa2c.gif" alt="Fotos IMG" width="486" height="572">
+   <img src="https://user-images.githubusercontent.com/105027088/169623788-26dfb90f-ba3c-4706-b4af-a8db481e4356.jpg" alt="Site IMG" width="719" height="711"><br>
+   <img src="https://user-images.githubusercontent.com/105027088/169625926-d8f92e2f-cf41-48d5-9faa-29bf102854be.gif" alt="Menu IMG" width="587" height="173"><br>
+   <img src="https://user-images.githubusercontent.com/105027088/169626023-80580c75-8445-4913-8bd9-42fc7a2df399.gif" alt="Cardapio IMG" width="386" height="568"><br>
+   <img src="https://user-images.githubusercontent.com/105027088/169627068-8e2259c1-5ff4-4217-a6ed-31a99c32aa2c.gif" alt="Fotos IMG" width="486" height="572"><br>
 </div>
 
 ## About The Project
