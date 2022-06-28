@@ -1,7 +1,9 @@
 <div id="top"></div>
 <div align="center">
 <h1>Restaurant-Website<br>Sabor Curitibano!</h1>
-<br>Projeto desenvolvido para estudo!
+<br>Projeto desenvolvido para estudo!<br>
+<a href="https://web-restaurant-one.vercel.app/">Click aqui para ver o site!</a>
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -35,6 +37,7 @@
 ## Images
 
 <div align="center">
+* [Click aqui para ver o website](https://vercel.com/maycontrix/web-restaurant)
    <img src="https://user-images.githubusercontent.com/105027088/169623788-26dfb90f-ba3c-4706-b4af-a8db481e4356.jpg" alt="Site IMG" width="719" height="711"><br>
    <img src="https://user-images.githubusercontent.com/105027088/169625926-d8f92e2f-cf41-48d5-9faa-29bf102854be.gif" alt="Menu IMG" width="587" height="173"><br>
    <img src="https://user-images.githubusercontent.com/105027088/169626023-80580c75-8445-4913-8bd9-42fc7a2df399.gif" alt="Cardapio IMG" width="386" height="568"><br>
@@ -88,6 +91,7 @@ Project Link: [https://github.com/MayconTrix/Restaurant-Website](https://github.
 * [RocketSeat](https://www.rocketseat.com.br/)
 * [Cod3r](https://www.cod3r.com.br/)
 * [Rafaella Ballerini](https://www.youtube.com/c/rafaellaballerini)
-* [Bedimcode ](https://www.youtube.com/c/Bedimcode)
+* [Bedimcode](https://www.youtube.com/c/Bedimcode)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
