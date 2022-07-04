@@ -7,7 +7,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-   <br><img src="assets/images/logoRePre01.jpg" alt="Logo" width="250" height="150">
+   <br><img src="assets/images/logoRePre01.jpg" target="_blank" alt="Logo" width="250" height="150">
 
   <h3 align="center">Learning HTML - CSS - JS</h3>
   <h4>100% Responsive Website<br>Dark and Light theme</h4>
