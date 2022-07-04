@@ -2,12 +2,12 @@
 <div align="center">
 <h1>Restaurant-Website<br>Sabor Curitibano!</h1>
 <br>Projeto desenvolvido para estudo!<br>
-<a href="https://web-restaurant-one.vercel.app/">Click aqui para ver o site!</a>
+<a href="https://web-restaurant-one.vercel.app/" target"_blank">Click aqui para ver o site!</a>
 
 
 <!-- PROJECT LOGO -->
 <br />
-   <br><img src="assets/images/logoRePre01.jpg" target="_blank" alt="Logo" width="250" height="150">
+   <br><img src="assets/images/logoRePre01.jpg" alt="Logo" width="250" height="150">
 
   <h3 align="center">Learning HTML - CSS - JS</h3>
   <h4>100% Responsive Website<br>Dark and Light theme</h4>
