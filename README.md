@@ -2,7 +2,7 @@
 <div align="center">
 <h1>Restaurant-Website<br>Sabor Curitibano!</h1>
 <br>Projeto desenvolvido para estudo!<br>
-<a href="https://web-restaurant-one.vercel.app/" target"_blank">Click aqui para ver o site!</a>
+<a href="https://web-restaurant-one.vercel.app/" target"_blank" rel="noopener noreferrer">Click aqui para ver o site!</a>
 
 
 <!-- PROJECT LOGO -->
