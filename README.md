@@ -5,7 +5,7 @@
 <a href="https://web-restaurant-one.vercel.app/" target"_blank" rel="noopener noreferrer">Click aqui para ver o site!</a>
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO --> 
 <br />
    <br><img src="assets/images/logoRePre01.jpg" alt="Logo" width="250" height="150">
 
